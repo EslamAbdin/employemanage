@@ -32,7 +32,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.DepName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -82,14 +82,14 @@
             this.label5.TabIndex = 27;
             this.label5.Text = "Department name";
             // 
-            // textBox3
+            // DepName
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(11, 160);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(217, 43);
-            this.textBox3.TabIndex = 26;
+            this.DepName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DepName.Location = new System.Drawing.Point(11, 160);
+            this.DepName.Multiline = true;
+            this.DepName.Name = "DepName";
+            this.DepName.Size = new System.Drawing.Size(217, 43);
+            this.DepName.TabIndex = 26;
             // 
             // label2
             // 
@@ -201,7 +201,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.DepName);
             this.Controls.Add(this.label2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -222,7 +222,7 @@
         private Button button2;
         private Button button1;
         private Label label5;
-        private TextBox textBox3;
+        private TextBox DepName;
         private Label label2;
         private FlowLayoutPanel flowLayoutPanel1;
         private DataGridView dataGridView1;
