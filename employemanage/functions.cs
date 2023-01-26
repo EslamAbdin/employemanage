@@ -8,24 +8,24 @@ using System.Threading.Tasks;
 
 namespace employemanage
 {
-    class functions
+    internal class Function
     {
         private SqlConnection Con;
-        private SqlCommand cmd;
-        private DateTable dt;
-        private SqlDateAdapter sda;
-        private string ConStr();
-        public Functions()
+        private SqlCommand Cmd;
+        private DataTable dt;
+        private SqlDataAdapter sda;
+        private string ConStr;
+        public Function()
         {
             ConStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Eslam\OneDrive\Documents\Empdb.mdf;Integrated Security=True;Connect Timeout=30";
             Con = new SqlConnection(ConStr);
             Cmd = new SqlCommand();
             Cmd.Connection = Con;
         }
-        public DateTable GetDate(string Query)
+        private DataTable GetData(string Query)
         {
-            dt = new DateTable();
-            sda = new SqlDateAdapter(Query, ConStr);
+            dt = new DataTable();
+            sda = new SqlDataAdapter(Query, ConStr);
             sda.Fill(dt);
             return dt;
         }
@@ -36,8 +36,8 @@ namespace employemanage
             {
                 Con.Open();
             }
-            cmd.CommandText = Query;
-            cnt = cmd.ExecuteNonQuery();
+            Cmd.CommandText = Query;
+            cnt = Cmd.ExecuteNonQuery();
             return cnt;
         }
     }

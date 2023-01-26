@@ -1,6 +1,6 @@
 ﻿namespace employemanage
 {
-    partial class Form2
+    partial class Departments
     {
         /// <summary>
         /// Required designer variable.
@@ -28,47 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Departments));
+            this.EditBtn = new System.Windows.Forms.Button();
+            this.AddBtn = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.DepName = new System.Windows.Forms.TextBox();
+            this.DepNameTb = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.DeptList = new System.Windows.Forms.DataGridView();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DeptList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button2
+            // EditBtn
             // 
-            this.button2.BackColor = System.Drawing.Color.SteelBlue;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(123, 234);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(105, 44);
-            this.button2.TabIndex = 36;
-            this.button2.Text = "update";
-            this.button2.UseVisualStyleBackColor = false;
+            this.EditBtn.BackColor = System.Drawing.Color.SteelBlue;
+            this.EditBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.EditBtn.Location = new System.Drawing.Point(123, 234);
+            this.EditBtn.Name = "EditBtn";
+            this.EditBtn.Size = new System.Drawing.Size(105, 44);
+            this.EditBtn.TabIndex = 36;
+            this.EditBtn.Text = "update";
+            this.EditBtn.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // AddBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.SteelBlue;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(12, 234);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 44);
-            this.button1.TabIndex = 32;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = false;
+            this.AddBtn.BackColor = System.Drawing.Color.SteelBlue;
+            this.AddBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AddBtn.Location = new System.Drawing.Point(12, 234);
+            this.AddBtn.Name = "AddBtn";
+            this.AddBtn.Size = new System.Drawing.Size(105, 44);
+            this.AddBtn.TabIndex = 32;
+            this.AddBtn.Text = "Add";
+            this.AddBtn.UseVisualStyleBackColor = false;
+            this.AddBtn.Click += new System.EventHandler(this.AddBtn_Click);
             // 
             // label5
             // 
@@ -82,14 +83,14 @@
             this.label5.TabIndex = 27;
             this.label5.Text = "Department name";
             // 
-            // DepName
+            // DepNameTb
             // 
-            this.DepName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DepName.Location = new System.Drawing.Point(11, 160);
-            this.DepName.Multiline = true;
-            this.DepName.Name = "DepName";
-            this.DepName.Size = new System.Drawing.Size(217, 43);
-            this.DepName.TabIndex = 26;
+            this.DepNameTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DepNameTb.Location = new System.Drawing.Point(11, 160);
+            this.DepNameTb.Multiline = true;
+            this.DepNameTb.Name = "DepNameTb";
+            this.DepNameTb.Size = new System.Drawing.Size(217, 43);
+            this.DepNameTb.TabIndex = 26;
             // 
             // label2
             // 
@@ -111,16 +112,16 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1029, 75);
             this.flowLayoutPanel1.TabIndex = 37;
             // 
-            // dataGridView1
+            // DeptList
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(298, 160);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(719, 436);
-            this.dataGridView1.TabIndex = 38;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.DeptList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DeptList.Location = new System.Drawing.Point(298, 160);
+            this.DeptList.Name = "DeptList";
+            this.DeptList.ReadOnly = true;
+            this.DeptList.RowTemplate.Height = 25;
+            this.DeptList.Size = new System.Drawing.Size(719, 436);
+            this.DeptList.TabIndex = 38;
+            this.DeptList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label12
             // 
@@ -184,7 +185,7 @@
             this.pictureBox1.TabIndex = 39;
             this.pictureBox1.TabStop = false;
             // 
-            // Form2
+            // Department
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -196,19 +197,19 @@
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.DeptList);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.EditBtn);
+            this.Controls.Add(this.AddBtn);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.DepName);
+            this.Controls.Add(this.DepNameTb);
             this.Controls.Add(this.label2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "Form2";
+            this.Name = "Department";
             this.Text = "Form2";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DeptList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -219,13 +220,13 @@
 
         #endregion
 
-        private Button button2;
-        private Button button1;
+        private Button EditBtn;
+        private Button AddBtn;
         private Label label5;
-        private TextBox DepName;
+        private TextBox DepNameTb;
         private Label label2;
         private FlowLayoutPanel flowLayoutPanel1;
-        private DataGridView dataGridView1;
+        private DataGridView DeptList;
         private Label label12;
         private Label label11;
         private Label label10;
