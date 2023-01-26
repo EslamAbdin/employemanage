@@ -29,7 +29,7 @@ namespace employemanage
             sda.Fill(dt);
             return dt;
         }
-        public int SetDate(String Query)
+        public int SetData(String Query)
         {
             int cnt = 0;
             if(Con.State == ConnectionState.Closed) 

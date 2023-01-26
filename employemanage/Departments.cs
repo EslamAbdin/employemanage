@@ -23,7 +23,7 @@ namespace employemanage
         private void showDepartments()
         {
             string Query = "Select * from DepartmentTb1";
-            DeptList.DataSource= Con.GetData(Query);
+            DeptList.DataSource = Con.SetData(Query);
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -43,6 +43,7 @@ namespace employemanage
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
         }
 
         private void AddBtn_Click(object sender, EventArgs e)
@@ -58,7 +59,7 @@ namespace employemanage
                     String Dep = DepNameTb.Text;
                     string Query = "insert into DepartmentTb1 values ('{0}')";
                     Query = string.Format(Query, DepNameTb.Text);
-                    Con.SetDate(Query);
+                    Con.SetData(Query);
                     showDepartments();
                     MessageBox.Show("Department Added!!!");
                     DepNameTb.Text = "";
