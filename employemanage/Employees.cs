@@ -19,19 +19,6 @@ namespace employemanage
             Con = new Functions();
             ShowDepartments();
         }
-        private void ShowEmp()
-        {
-            try
-            {
-                string Query = "Select * from EmployeeTb1";
-                EmployeeList.DataSource = Con.GetData(Query);
-            }
-            catch
-            {
-                throw;
-            }
-            }
-
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
