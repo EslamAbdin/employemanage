@@ -154,6 +154,7 @@ namespace employemanage
                     int Dep = Convert.ToInt32(DepCb.SelectedValue.ToString());
                     string DOB = DOBTb.Value.ToString();
                     string JDate = JDateTb.Value.ToString();
+                    int Salary = Convert.ToInt32(DailySalTb.Text);
                 }
             }
 
