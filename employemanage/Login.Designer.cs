@@ -37,7 +37,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.ResetLbl = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -131,18 +131,18 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // ResetLbl
+            // label4
             // 
-            this.ResetLbl.AutoSize = true;
-            this.ResetLbl.BackColor = System.Drawing.Color.IndianRed;
-            this.ResetLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.ResetLbl.ForeColor = System.Drawing.Color.AliceBlue;
-            this.ResetLbl.Location = new System.Drawing.Point(402, 292);
-            this.ResetLbl.Name = "ResetLbl";
-            this.ResetLbl.Size = new System.Drawing.Size(39, 15);
-            this.ResetLbl.TabIndex = 7;
-            this.ResetLbl.Text = "reset";
-            this.ResetLbl.Click += new System.EventHandler(this.label4_Click);
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.IndianRed;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.AliceBlue;
+            this.label4.Location = new System.Drawing.Point(402, 292);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(39, 15);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "reset";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // Login
             // 
@@ -150,7 +150,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(686, 390);
-            this.Controls.Add(this.ResetLbl);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -180,7 +180,7 @@
         private Label label2;
         private Label label3;
         private Button button1;
-        private Label ResetLbl;
+        private Label label4;
         private PictureBox pictureBox2;
     }
 }

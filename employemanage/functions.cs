@@ -26,7 +26,7 @@ namespace employemanage
         {
             dt = new DataTable();
             sda = new SqlDataAdapter(Query, ConStr);
-            sda.Fill(dt);
+            int v = sda.Fill(dt);
             return dt;
         }
         public int SetData(String Query)

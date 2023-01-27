@@ -24,11 +24,11 @@ namespace employemanage
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (UNameTb.Text == "" || PasswordTb.Text == "")
+            if(UNameTb.Text == ""|| PasswordTb.Text == "")
             {
                 MessageBox.Show("Missing Data!!!");
             }
-            else if (UNameTb.Text == "Admin" && PasswordTb.Text == "Password")
+            else if(UNameTb.Text == "Admin" && PasswordTb.Text == "Password")
             {
                 Employees Obj = new Employees();
                 Obj.Show();
