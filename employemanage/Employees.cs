@@ -34,6 +34,8 @@ namespace employemanage
         }
         private void ShowDepartments()
         {
+            string Query = "Select * from DepartmentTb1";
+
         }
 
 
