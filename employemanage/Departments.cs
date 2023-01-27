@@ -23,7 +23,7 @@ namespace employemanage
         private void ShowDepartments()
         {
             string Query = "Select * from DepartmentTb1";
-            Deplist.DataSource = Con.GetData(Query);
+            DepList.DataSource = Con.GetData(Query);
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -74,14 +74,14 @@ namespace employemanage
         int key = 0;
         private void DepList_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            DepNameTb.Text = Deplist.SelectedRows[0].Cells[0].Value.ToString();
+            DepNameTb.Text = DepList.SelectedRows[0].Cells[0].Value.ToString();
             if (DepNameTb.Text == "")
             {
                 key = 0;
             }
             else
             {
-                key = Convert.ToInt32(Deplist.SelectedRows[0].Cells[0].Value.ToString());
+                key = Convert.ToInt32(DepList.SelectedRows[0].Cells[0].Value.ToString());
             }
         }
 

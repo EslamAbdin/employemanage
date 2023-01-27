@@ -107,5 +107,10 @@ namespace employemanage
          
          
         }
+
+        private void EmployeeList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
