@@ -29,23 +29,27 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Departments));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.EditBtn = new System.Windows.Forms.Button();
             this.AddBtn = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.DepNameTb = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.DeptList = new System.Windows.Forms.DataGridView();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.EmpLb = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.DeptList)).BeginInit();
+            this.EmpLbi = new System.Windows.Forms.PictureBox();
+            this.Deplist = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.DeleteBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmpLbi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Deplist)).BeginInit();
             this.SuspendLayout();
             // 
             // EditBtn
@@ -58,6 +62,7 @@
             this.EditBtn.TabIndex = 36;
             this.EditBtn.Text = "update";
             this.EditBtn.UseVisualStyleBackColor = false;
+            this.EditBtn.Click += new System.EventHandler(this.EditBtn_Click);
             // 
             // AddBtn
             // 
@@ -112,17 +117,6 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1029, 75);
             this.flowLayoutPanel1.TabIndex = 37;
             // 
-            // DeptList
-            // 
-            this.DeptList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DeptList.Location = new System.Drawing.Point(298, 160);
-            this.DeptList.Name = "DeptList";
-            this.DeptList.ReadOnly = true;
-            this.DeptList.RowTemplate.Height = 25;
-            this.DeptList.Size = new System.Drawing.Size(719, 436);
-            this.DeptList.TabIndex = 38;
-            this.DeptList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -144,15 +138,15 @@
             this.label11.TabIndex = 43;
             this.label11.Text = "Department";
             // 
-            // label10
+            // EmpLb
             // 
-            this.label10.AutoSize = true;
-            this.label10.ForeColor = System.Drawing.Color.Blue;
-            this.label10.Location = new System.Drawing.Point(658, 98);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(149, 20);
-            this.label10.TabIndex = 42;
-            this.label10.Text = "Manage Employees";
+            this.EmpLb.AutoSize = true;
+            this.EmpLb.ForeColor = System.Drawing.Color.Blue;
+            this.EmpLb.Location = new System.Drawing.Point(658, 98);
+            this.EmpLb.Name = "EmpLb";
+            this.EmpLb.Size = new System.Drawing.Size(149, 20);
+            this.EmpLb.TabIndex = 42;
+            this.EmpLb.Text = "Manage Employees";
             // 
             // pictureBox4
             // 
@@ -175,29 +169,95 @@
             this.pictureBox3.TabIndex = 40;
             this.pictureBox3.TabStop = false;
             // 
-            // pictureBox1
+            // EmpLbi
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(590, 81);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(62, 54);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 39;
-            this.pictureBox1.TabStop = false;
+            this.EmpLbi.Image = ((System.Drawing.Image)(resources.GetObject("EmpLbi.Image")));
+            this.EmpLbi.Location = new System.Drawing.Point(590, 81);
+            this.EmpLbi.Name = "EmpLbi";
+            this.EmpLbi.Size = new System.Drawing.Size(62, 54);
+            this.EmpLbi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.EmpLbi.TabIndex = 39;
+            this.EmpLbi.TabStop = false;
+            this.EmpLbi.Click += new System.EventHandler(this.EmpLbi_Click);
             // 
-            // Department
+            // DepList
+            // 
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.Deplist.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Deplist.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.Deplist.ColumnHeadersHeight = 4;
+            this.Deplist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Deplist.DefaultCellStyle = dataGridViewCellStyle6;
+            this.Deplist.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.Deplist.Location = new System.Drawing.Point(369, 160);
+            this.Deplist.Name = "DepList";
+            this.Deplist.RowHeadersVisible = false;
+            this.Deplist.RowTemplate.Height = 25;
+            this.Deplist.Size = new System.Drawing.Size(631, 424);
+            this.Deplist.TabIndex = 46;
+            this.Deplist.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.Deplist.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.Deplist.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.Deplist.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.Deplist.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.Deplist.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.Deplist.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.Deplist.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.Deplist.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.Deplist.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Deplist.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.Deplist.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.Deplist.ThemeStyle.HeaderStyle.Height = 4;
+            this.Deplist.ThemeStyle.ReadOnly = false;
+            this.Deplist.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.Deplist.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.Deplist.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Deplist.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.Deplist.ThemeStyle.RowsStyle.Height = 25;
+            this.Deplist.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.Deplist.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.Deplist.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DepList_CellContentClick);
+            // 
+            // DeleteBtn
+            // 
+            this.DeleteBtn.BackColor = System.Drawing.Color.SteelBlue;
+            this.DeleteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DeleteBtn.Location = new System.Drawing.Point(72, 300);
+            this.DeleteBtn.Name = "DeleteBtn";
+            this.DeleteBtn.Size = new System.Drawing.Size(105, 44);
+            this.DeleteBtn.TabIndex = 47;
+            this.DeleteBtn.Text = "Delete";
+            this.DeleteBtn.UseVisualStyleBackColor = false;
+            this.DeleteBtn.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // Departments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1029, 600);
+            this.ClientSize = new System.Drawing.Size(1029, 670);
+            this.Controls.Add(this.DeleteBtn);
+            this.Controls.Add(this.Deplist);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
+            this.Controls.Add(this.EmpLb);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.DeptList);
+            this.Controls.Add(this.EmpLbi);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.EditBtn);
             this.Controls.Add(this.AddBtn);
@@ -207,12 +267,13 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "Department";
+            this.Name = "Departments";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
-            ((System.ComponentModel.ISupportInitialize)(this.DeptList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmpLbi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Deplist)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -226,12 +287,13 @@
         private TextBox DepNameTb;
         private Label label2;
         private FlowLayoutPanel flowLayoutPanel1;
-        private DataGridView DeptList;
         private Label label12;
         private Label label11;
-        private Label label10;
+        private Label EmpLb;
         private PictureBox pictureBox4;
         private PictureBox pictureBox3;
-        private PictureBox pictureBox1;
+        private PictureBox EmpLbi;
+        private Guna.UI2.WinForms.Guna2DataGridView Deplist;
+        private Button DeleteBtn;
     }
 }

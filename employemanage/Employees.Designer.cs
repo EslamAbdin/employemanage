@@ -39,18 +39,17 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label9 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.EmpNameTb = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.DailySalTb = new System.Windows.Forms.TextBox();
+            this.AddBtn = new System.Windows.Forms.Button();
+            this.GenCb = new System.Windows.Forms.ComboBox();
+            this.UpdateBtn = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -58,15 +57,17 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.DepList = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.DOBTb = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.JDateTb = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.EmployeeList = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.DeleteBtn = new System.Windows.Forms.Button();
+            this.DepCb = new System.Windows.Forms.ComboBox();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DepList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmployeeList)).BeginInit();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -101,13 +102,13 @@
             this.label2.Text = "Manage Employees";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // textBox1
+            // EmpNameTb
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(12, 177);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(216, 26);
-            this.textBox1.TabIndex = 3;
+            this.EmpNameTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.EmpNameTb.Location = new System.Drawing.Point(12, 177);
+            this.EmpNameTb.Name = "EmpNameTb";
+            this.EmpNameTb.Size = new System.Drawing.Size(216, 26);
+            this.EmpNameTb.TabIndex = 3;
             // 
             // label3
             // 
@@ -145,15 +146,6 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "Employee Department";
             // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(12, 316);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(217, 23);
-            this.textBox3.TabIndex = 9;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -162,9 +154,9 @@
             this.label6.ForeColor = System.Drawing.Color.AliceBlue;
             this.label6.Location = new System.Drawing.Point(12, 359);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(110, 20);
+            this.label6.Size = new System.Drawing.Size(112, 20);
             this.label6.TabIndex = 12;
-            this.label6.Text = "Date of birth";
+            this.label6.Text = "Date of Birth";
             // 
             // label7
             // 
@@ -186,52 +178,54 @@
             this.label8.ForeColor = System.Drawing.Color.AliceBlue;
             this.label8.Location = new System.Drawing.Point(12, 495);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(136, 20);
+            this.label8.Size = new System.Drawing.Size(186, 20);
             this.label8.TabIndex = 16;
-            this.label8.Text = "Employee Daily ";
+            this.label8.Text = "Employee Daily Salary";
             // 
-            // textBox6
+            // DailySalTb
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox6.Location = new System.Drawing.Point(12, 518);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(216, 26);
-            this.textBox6.TabIndex = 15;
-            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            this.DailySalTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DailySalTb.Location = new System.Drawing.Point(12, 518);
+            this.DailySalTb.Name = "DailySalTb";
+            this.DailySalTb.Size = new System.Drawing.Size(216, 26);
+            this.DailySalTb.TabIndex = 15;
+            this.DailySalTb.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
-            // button1
+            // AddBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.SteelBlue;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(12, 569);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 44);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = false;
+            this.AddBtn.BackColor = System.Drawing.Color.SteelBlue;
+            this.AddBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AddBtn.Location = new System.Drawing.Point(12, 550);
+            this.AddBtn.Name = "AddBtn";
+            this.AddBtn.Size = new System.Drawing.Size(105, 44);
+            this.AddBtn.TabIndex = 17;
+            this.AddBtn.Text = "Add";
+            this.AddBtn.UseVisualStyleBackColor = false;
+            this.AddBtn.Click += new System.EventHandler(this.button1_Click);
             // 
-            // comboBox1
+            // GenCb
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.GenCb.FormattingEnabled = true;
+            this.GenCb.Items.AddRange(new object[] {
             "male",
             "female"});
-            this.comboBox1.Location = new System.Drawing.Point(12, 243);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(217, 28);
-            this.comboBox1.TabIndex = 18;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.GenCb.Location = new System.Drawing.Point(12, 243);
+            this.GenCb.Name = "GenCb";
+            this.GenCb.Size = new System.Drawing.Size(217, 28);
+            this.GenCb.TabIndex = 18;
+            this.GenCb.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // button2
+            // UpdateBtn
             // 
-            this.button2.BackColor = System.Drawing.Color.SteelBlue;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(123, 569);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(105, 44);
-            this.button2.TabIndex = 21;
-            this.button2.Text = "update";
-            this.button2.UseVisualStyleBackColor = false;
+            this.UpdateBtn.BackColor = System.Drawing.Color.SteelBlue;
+            this.UpdateBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.UpdateBtn.Location = new System.Drawing.Point(124, 550);
+            this.UpdateBtn.Name = "UpdateBtn";
+            this.UpdateBtn.Size = new System.Drawing.Size(105, 44);
+            this.UpdateBtn.TabIndex = 21;
+            this.UpdateBtn.Text = "Update";
+            this.UpdateBtn.UseVisualStyleBackColor = false;
+            this.UpdateBtn.Click += new System.EventHandler(this.UpdateBtn_Click);
             // 
             // pictureBox2
             // 
@@ -304,40 +298,40 @@
             this.label12.TabIndex = 29;
             this.label12.Text = "log out";
             // 
-            // guna2DateTimePicker1
+            // DOBTb
             // 
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.CustomizableEdges = customizableEdges5;
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(12, 382);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(200, 36);
-            this.guna2DateTimePicker1.TabIndex = 30;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2023, 1, 26, 17, 16, 5, 389);
+            this.DOBTb.Checked = true;
+            this.DOBTb.CustomizableEdges = customizableEdges5;
+            this.DOBTb.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DOBTb.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.DOBTb.Location = new System.Drawing.Point(12, 382);
+            this.DOBTb.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.DOBTb.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.DOBTb.Name = "DOBTb";
+            this.DOBTb.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            this.DOBTb.Size = new System.Drawing.Size(200, 36);
+            this.DOBTb.TabIndex = 30;
+            this.DOBTb.Value = new System.DateTime(2023, 1, 26, 17, 16, 5, 389);
             // 
-            // guna2DateTimePicker2
+            // JDateTb
             // 
-            this.guna2DateTimePicker2.Checked = true;
-            this.guna2DateTimePicker2.CustomizableEdges = customizableEdges7;
-            this.guna2DateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker2.Location = new System.Drawing.Point(12, 446);
-            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
-            this.guna2DateTimePicker2.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            this.guna2DateTimePicker2.Size = new System.Drawing.Size(200, 36);
-            this.guna2DateTimePicker2.TabIndex = 31;
-            this.guna2DateTimePicker2.Value = new System.DateTime(2023, 1, 26, 17, 16, 6, 837);
+            this.JDateTb.Checked = true;
+            this.JDateTb.CustomizableEdges = customizableEdges7;
+            this.JDateTb.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.JDateTb.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.JDateTb.Location = new System.Drawing.Point(12, 446);
+            this.JDateTb.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.JDateTb.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.JDateTb.Name = "JDateTb";
+            this.JDateTb.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            this.JDateTb.Size = new System.Drawing.Size(200, 36);
+            this.JDateTb.TabIndex = 31;
+            this.JDateTb.Value = new System.DateTime(2023, 1, 26, 17, 16, 6, 837);
             // 
-            // DepList
+            // EmployeeList
             // 
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.DepList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.EmployeeList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -345,8 +339,9 @@
             dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DepList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.DepList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.EmployeeList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.EmployeeList.ColumnHeadersHeight = 4;
+            this.EmployeeList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -354,35 +349,57 @@
             dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DepList.DefaultCellStyle = dataGridViewCellStyle6;
-            this.DepList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DepList.Location = new System.Drawing.Point(332, 189);
-            this.DepList.Name = "DepList";
-            this.DepList.RowHeadersVisible = false;
-            this.DepList.RowTemplate.Height = 25;
-            this.DepList.Size = new System.Drawing.Size(631, 424);
-            this.DepList.TabIndex = 32;
-            this.DepList.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.DepList.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.DepList.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.DepList.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.DepList.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.DepList.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.DepList.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DepList.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.DepList.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.DepList.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DepList.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.DepList.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DepList.ThemeStyle.HeaderStyle.Height = 4;
-            this.DepList.ThemeStyle.ReadOnly = false;
-            this.DepList.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.DepList.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.DepList.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DepList.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.DepList.ThemeStyle.RowsStyle.Height = 25;
-            this.DepList.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DepList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.EmployeeList.DefaultCellStyle = dataGridViewCellStyle6;
+            this.EmployeeList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.EmployeeList.Location = new System.Drawing.Point(344, 177);
+            this.EmployeeList.Name = "EmployeeList";
+            this.EmployeeList.RowHeadersVisible = false;
+            this.EmployeeList.RowTemplate.Height = 25;
+            this.EmployeeList.Size = new System.Drawing.Size(631, 424);
+            this.EmployeeList.TabIndex = 47;
+            this.EmployeeList.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.EmployeeList.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.EmployeeList.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.EmployeeList.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.EmployeeList.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.EmployeeList.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.EmployeeList.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.EmployeeList.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.EmployeeList.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.EmployeeList.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.EmployeeList.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.EmployeeList.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.EmployeeList.ThemeStyle.HeaderStyle.Height = 4;
+            this.EmployeeList.ThemeStyle.ReadOnly = false;
+            this.EmployeeList.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.EmployeeList.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.EmployeeList.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.EmployeeList.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.EmployeeList.ThemeStyle.RowsStyle.Height = 25;
+            this.EmployeeList.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.EmployeeList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.EmployeeList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DepList_CellContentClick_1);
+            // 
+            // DeleteBtn
+            // 
+            this.DeleteBtn.BackColor = System.Drawing.Color.SteelBlue;
+            this.DeleteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DeleteBtn.Location = new System.Drawing.Point(59, 600);
+            this.DeleteBtn.Name = "DeleteBtn";
+            this.DeleteBtn.Size = new System.Drawing.Size(105, 44);
+            this.DeleteBtn.TabIndex = 48;
+            this.DeleteBtn.Text = "Delete";
+            this.DeleteBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.DeleteBtn.UseVisualStyleBackColor = false;
+            this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
+            // 
+            // DepCb
+            // 
+            this.DepCb.FormattingEnabled = true;
+            this.DepCb.Location = new System.Drawing.Point(12, 316);
+            this.DepCb.Name = "DepCb";
+            this.DepCb.Size = new System.Drawing.Size(217, 28);
+            this.DepCb.TabIndex = 49;
             // 
             // Employees
             // 
@@ -390,9 +407,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1029, 670);
-            this.Controls.Add(this.DepList);
-            this.Controls.Add(this.guna2DateTimePicker2);
-            this.Controls.Add(this.guna2DateTimePicker1);
+            this.Controls.Add(this.DepCb);
+            this.Controls.Add(this.DeleteBtn);
+            this.Controls.Add(this.EmployeeList);
+            this.Controls.Add(this.JDateTb);
+            this.Controls.Add(this.DOBTb);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -400,24 +419,24 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.UpdateBtn);
+            this.Controls.Add(this.GenCb);
+            this.Controls.Add(this.AddBtn);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.DailySalTb);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.EmpNameTb);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Employees";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
             this.Load += new System.EventHandler(this.emploees_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -426,7 +445,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DepList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmployeeList)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -436,18 +455,17 @@
 
         private FlowLayoutPanel flowLayoutPanel1;
         private Label label2;
-        private TextBox textBox1;
+        private TextBox EmpNameTb;
         private Label label3;
         private Label label4;
         private Label label5;
-        private TextBox textBox3;
         private Label label6;
         private Label label7;
         private Label label8;
-        private TextBox textBox6;
-        private Button button1;
-        private ComboBox comboBox1;
-        private Button button2;
+        private TextBox DailySalTb;
+        private Button AddBtn;
+        private ComboBox GenCb;
+        private Button UpdateBtn;
         private Label label9;
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;
@@ -456,8 +474,10 @@
         private Label label10;
         private Label label11;
         private Label label12;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
-        private Guna.UI2.WinForms.Guna2DataGridView DepList;
+        private Guna.UI2.WinForms.Guna2DateTimePicker DOBTb;
+        private Guna.UI2.WinForms.Guna2DateTimePicker JDateTb;
+        private Guna.UI2.WinForms.Guna2DataGridView EmployeeList;
+        private Button DeleteBtn;
+        private ComboBox DepCb;
     }
 }

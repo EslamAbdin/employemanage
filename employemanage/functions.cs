@@ -8,21 +8,21 @@ using System.Threading.Tasks;
 
 namespace employemanage
 {
-    internal class Function
+    internal class Functions
     {
         private SqlConnection Con;
         private SqlCommand Cmd;
         private DataTable dt;
         private SqlDataAdapter sda;
         private string ConStr;
-        public Function()
+       public Functions()
         {
             ConStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Eslam\OneDrive\Documents\Empdb.mdf;Integrated Security=True;Connect Timeout=30";
             Con = new SqlConnection(ConStr);
             Cmd = new SqlCommand();
             Cmd.Connection = Con;
         }
-        private DataTable GetData(string Query)
+        public DataTable GetData(string Query)
         {
             dt = new DataTable();
             sda = new SqlDataAdapter(Query, ConStr);
