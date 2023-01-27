@@ -17,6 +17,7 @@ namespace employemanage
         {
             InitializeComponent();
             Con = new Functions();
+            ShowEmp();
             ShowDepartments();
         }
         private void ShowDepartments()
