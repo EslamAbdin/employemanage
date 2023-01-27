@@ -194,6 +194,8 @@ namespace employemanage
                     Con.SetData(Query);
                     ShowEmp();
                     MessageBox.Show("Emoloyee Updated!!!");
+                    EmpNameTb.Text = "";
+                    DailySalTb.Text = "";
                 }
             }
 
