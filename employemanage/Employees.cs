@@ -30,13 +30,10 @@ namespace employemanage
             catch
             {
                 throw;
-
             }
         }
         private void ShowDepartments()
         {
-            string Query = "Select * from DepartmentTb1";
-            Deplist.DataSource = Con.GetData(Query);
         }
 
 
