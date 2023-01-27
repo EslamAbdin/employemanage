@@ -141,6 +141,10 @@ namespace employemanage
 
         private void DeleteBtn_Click(object sender, EventArgs e)
         {
+            try
+            {
+
+            }
 
         }
 
