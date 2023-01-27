@@ -155,6 +155,7 @@ namespace employemanage
                     string DOB = DOBTb.Value.ToString();
                     string JDate = JDateTb.Value.ToString();
                     int Salary = Convert.ToInt32(DailySalTb.Text);
+                    string Query = "Delete from EmployeeTb1 where Empid= {0}";
                 }
             }
 
