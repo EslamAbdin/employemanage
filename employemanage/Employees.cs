@@ -175,7 +175,10 @@ namespace employemanage
 
         private void UpdateBtn_Click(object sender, EventArgs e)
         {
-            try { }
+            try
+            {
+                if
+            }
 
 
         }
