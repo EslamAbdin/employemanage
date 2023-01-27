@@ -19,6 +19,12 @@ namespace employemanage
             Con = new Functions();
             ShowDepartments();
         }
+        private void ShowDepartments()
+        {
+            string Query = "Select * from DepartmentTb1";
+            Deplist.DataSource = Con.GetData(Query);
+        }
+
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
