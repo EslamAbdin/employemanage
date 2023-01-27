@@ -35,7 +35,9 @@ namespace employemanage
         private void ShowDepartments()
         {
             string Query = "Select * from DepartmentTb1";
-
+            DepCb.DisplayMember = Con.GetData(Query).Columns["Depname"].ToString();
+            DepCb.ValueMember = Con.GetData(Query).Columns["Depid"].ToString();
+            DepCb.DataSource = Con.GetData(Query);
         }
 
 
