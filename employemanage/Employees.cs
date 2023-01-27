@@ -32,7 +32,7 @@ namespace employemanage
                 throw;
             }
         }
-        private void ShowDepartments()
+        private void GetDepartments()
         {
             string Query = "Select * from DepartmentTb1";
             DepCb.DisplayMember = Con.GetData(Query).Columns["Depname"].ToString();
