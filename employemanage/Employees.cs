@@ -134,6 +134,9 @@ namespace employemanage
                     DepCb.SelectedIndex = -1;
                 }
             }
+            catch(Exception ex) { 
+
+            }
         }
 
         private void DeleteBtn_Click(object sender, EventArgs e)
