@@ -128,5 +128,6 @@ namespace employemanage
          EmpNameTb.Text = EmployeeList.SelectedRows[0].Cells[1].Value.ToString();
          GenCb.Text = EmployeeList.SelectedRows[0].Cells[2].Value.ToString();
             DepCb.SelectedValue = EmployeeList.SelectedRows[0].Cells[3].Value.ToString();
+            DOBTb.Text = EmployeeList.SelectedRows[0].Cells[4].Value.ToString();
         }
 }
