@@ -109,7 +109,10 @@ namespace employemanage
 
         private void button1_Click(object sender, EventArgs e)
         {
+            try
+            {
 
+            }
         }
 
         private void DeleteBtn_Click(object sender, EventArgs e)
