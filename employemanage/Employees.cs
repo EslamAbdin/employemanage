@@ -184,6 +184,7 @@ namespace employemanage
                 else
                 {
                     string Name = EmpNameTb.Text;
+                    string Gender = GenCb.SelectedItem.ToString();
                 }
             }
 
