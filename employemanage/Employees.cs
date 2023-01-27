@@ -115,6 +115,11 @@ namespace employemanage
                 {
                     MessageBox.Show("missing date!!!!");
                 }
+                else
+                {
+                    string Name = EmpNameTb.Text;
+
+                }
             }
         }
 
