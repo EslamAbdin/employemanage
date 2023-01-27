@@ -143,6 +143,10 @@ namespace employemanage
         {
             try
             {
+                if (key == 0)
+                {
+                    MessageBox.Show("missing data!!!");
+                }
 
             }
 
