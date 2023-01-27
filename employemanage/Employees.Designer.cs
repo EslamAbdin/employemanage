@@ -331,7 +331,7 @@
             // 
             // DeleteBtn
             // 
-            this.DeleteBtn.BackColor = System.Drawing.Color.SteelBlue;
+            this.DeleteBtn.BackColor = System.Drawing.Color.Crimson;
             this.DeleteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.DeleteBtn.Location = new System.Drawing.Point(59, 600);
             this.DeleteBtn.Name = "DeleteBtn";
