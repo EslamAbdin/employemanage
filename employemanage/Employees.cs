@@ -183,7 +183,7 @@ namespace employemanage
                 }
                 else
                 {
-
+                    string Name = EmpNameTb.Text;
                 }
             }
 
