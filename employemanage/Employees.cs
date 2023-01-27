@@ -29,6 +29,7 @@ namespace employemanage
             }
             catch
             {
+                throw;
 
             }
         }
