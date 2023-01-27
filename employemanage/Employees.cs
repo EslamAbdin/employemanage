@@ -22,7 +22,11 @@ namespace employemanage
         }
         private void ShowEmp()
         {
-
+            try
+            {
+                string Query = "Select * from EmployeeTb1";
+                EmployeeList.DataSource = Con.GetData(Query);
+            }
         }
         private void ShowDepartments()
         {
