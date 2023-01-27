@@ -24,7 +24,7 @@ namespace employemanage
         {
             try
             {
-                string Query = "Select * from EmployeeTb1";
+                string Query = "Select * from EmpoyeeTb1";
                 EmployeeList.DataSource = Con.GetData(Query);
             }
             catch
@@ -189,7 +189,7 @@ namespace employemanage
                     string DOB = DOBTb.Value.Date.ToString();
                     string JDate = JDateTb.Value.Date.ToString();
                     int Salary = Convert.ToInt32(DailySalTb.Text);
-                    string Query = "Update EmployeeTb1 set EmpName = '{0}',EmpGen='{1}',EmpDep={2},EmpDOB='{3}',Empjdate='{4}',EmpSal={5} where Empid= {6}";
+                    string Query = "Update EmpoyeeTb1 set EmpName = '{0}',EmpGen='{1}',EmpDep={2},EmpDOB='{3}',Empjdate='{4}',EmpSal={5} where Empid= {6}";
                     Query = string.Format(Query, Name, Gender, Dep, DOB, JDate, Salary, key);
                     Con.SetData(Query);
                     ShowEmp();
@@ -223,6 +223,13 @@ namespace employemanage
             {
                 key = Convert.ToInt32(EmployeeList.SelectedRows[0].Cells[0].Value.ToString());
             }
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Departments obj = new Departments();
+            obj.Show();
+            this.Hide();
         }
     }
 }
