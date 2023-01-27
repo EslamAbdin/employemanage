@@ -134,7 +134,7 @@ namespace employemanage
                     DepCb.SelectedIndex = -1;
                 }
             }
-            catch(Exception ex) {
+            catch(Exception Ex) {
                 MessageBox.Show(Ex.Message);
             }
         }
@@ -165,6 +165,10 @@ namespace employemanage
                     GenCb.SelectedIndex = -1;
                     DepCb.SelectedIndex = -1;
                 }
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
             }
 
         }
