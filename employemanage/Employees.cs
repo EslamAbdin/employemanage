@@ -20,6 +20,10 @@ namespace employemanage
             ShowEmp();
             ShowDepartments();
         }
+        private void ShowEmp()
+        {
+
+        }
         private void ShowDepartments()
         {
             string Query = "Select * from DepartmentTb1";
