@@ -134,7 +134,7 @@ namespace employemanage
                     DepCb.SelectedIndex = -1;
                 }
             }
-            catch(Exception Ex) {
+                catch(Exception Ex) {
                 MessageBox.Show(Ex.Message);
             }
         }
