@@ -88,7 +88,7 @@
             // PasswordTb
             // 
             this.PasswordTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.PasswordTb.Location = new System.Drawing.Point(256, 244);
+            this.PasswordTb.Location = new System.Drawing.Point(256, 209);
             this.PasswordTb.Name = "PasswordTb";
             this.PasswordTb.Size = new System.Drawing.Size(185, 26);
             this.PasswordTb.TabIndex = 3;
@@ -99,7 +99,7 @@
             this.label2.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label2.Location = new System.Drawing.Point(256, 221);
+            this.label2.Location = new System.Drawing.Point(256, 186);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 20);
             this.label2.TabIndex = 4;
