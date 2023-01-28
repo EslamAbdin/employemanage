@@ -68,8 +68,8 @@ namespace employemanage
                 }
 
             }
-            catch (Exception ex)
-            {
+             catch (Exception ex)
+            { 
                 MessageBox.Show(ex.Message);
             }
         }
@@ -87,7 +87,7 @@ namespace employemanage
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+         private void button1_Click(object sender, EventArgs e)
         {
             {
                 try
