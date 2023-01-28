@@ -22,8 +22,8 @@ namespace employemanage
 
          private void ShowDepartments()
         {
-            string Query = "Select * from DepartmentTb1";
-            DepList.DataSource = Con.GetData(Query);
+             string Query = "Select * from DepartmentTb1";
+             DepList.DataSource = Con.GetData(Query);
         }
 
         private void label2_Click(object sender, EventArgs e)
