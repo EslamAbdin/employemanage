@@ -92,6 +92,7 @@
             this.PasswordTb.Location = new System.Drawing.Point(131, 203);
             this.PasswordTb.Name = "PasswordTb";
             this.PasswordTb.PasswordChar = '*';
+            this.PasswordTb.PlaceholderText = "Type Your Password";
             this.PasswordTb.Size = new System.Drawing.Size(185, 26);
             this.PasswordTb.TabIndex = 3;
             // 
