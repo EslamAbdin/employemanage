@@ -81,6 +81,7 @@
             this.UNameTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.UNameTb.Location = new System.Drawing.Point(131, 140);
             this.UNameTb.Name = "UNameTb";
+            this.UNameTb.PlaceholderText = "Type Your Name";
             this.UNameTb.Size = new System.Drawing.Size(185, 26);
             this.UNameTb.TabIndex = 2;
             this.UNameTb.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
