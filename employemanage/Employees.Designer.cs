@@ -378,7 +378,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.EmployeeList.DefaultCellStyle = dataGridViewCellStyle3;
             this.EmployeeList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.EmployeeList.Location = new System.Drawing.Point(344, 154);
+            this.EmployeeList.Location = new System.Drawing.Point(325, 154);
             this.EmployeeList.Name = "EmployeeList";
             this.EmployeeList.RowHeadersVisible = false;
             this.EmployeeList.RowTemplate.Height = 25;
