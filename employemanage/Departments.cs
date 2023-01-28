@@ -125,13 +125,13 @@ namespace employemanage
                 }
                 else
                 {
-                    string Dep = DepNameTb.Text;
-                    string Query = "Update DepartmentTb1 set Depname = '{0}' where Depid = {1}";
-                    Query = string.Format(Query, DepNameTb.Text, key);
-                    Con.SetData(Query);
-                    ShowDepartments();
-                    MessageBox.Show("Department Updated!!!");
-                    DepNameTb.Text = "";
+                     string Dep = DepNameTb.Text;
+                     string Query = "Update DepartmentTb1 set Depname = '{0}' where Depid = {1}";
+                     Query = string.Format(Query, DepNameTb.Text, key);
+                     Con.SetData(Query);
+                     ShowDepartments();
+                     MessageBox.Show("Department Updated!!!");
+                     DepNameTb.Text = "";
                 }
             }
             catch (Exception Ex)
