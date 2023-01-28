@@ -331,7 +331,7 @@
             this.JDateTb.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.JDateTb.Name = "JDateTb";
             this.JDateTb.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            this.JDateTb.Size = new System.Drawing.Size(200, 36);
+            this.JDateTb.Size = new System.Drawing.Size(216, 36);
             this.JDateTb.TabIndex = 31;
             this.JDateTb.Value = new System.DateTime(2023, 1, 26, 17, 16, 6, 837);
             // 
