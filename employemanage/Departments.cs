@@ -51,10 +51,10 @@ namespace employemanage
          private void AddBtn_Click(object sender, EventArgs e)
         {
             try
-            {
-                if (DepNameTb.Text == "")
+            { 
+                 if (DepNameTb.Text == "")
                 {
-                    MessageBox.Show("Missing Data!!!");
+                     MessageBox.Show("Missing Data!!!");
                 }
                 else
                 {
