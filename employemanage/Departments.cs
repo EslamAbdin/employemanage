@@ -115,7 +115,7 @@ namespace employemanage
 
         }
 
-        private void EditBtn_Click(object sender, EventArgs e)
+         private void EditBtn_Click(object sender, EventArgs e)
         {
             try
             {
