@@ -225,7 +225,7 @@ namespace employemanage
             }
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
+         private void pictureBox3_Click(object sender, EventArgs e)
         {
             Departments obj = new Departments();
             obj.Show();
