@@ -140,7 +140,7 @@ namespace employemanage
             }
         }
 
-        private void EmpLbi_Click(object sender, EventArgs e)
+         private void EmpLbi_Click(object sender, EventArgs e)
         {
             Employees obj = new Employees();
             obj.Show();
