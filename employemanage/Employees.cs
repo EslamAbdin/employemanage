@@ -117,11 +117,11 @@ namespace employemanage
                 }
                 else
                 {
-                    string Name = EmpNameTb.Text;
-                    string Gender = GenCb.SelectedItem.ToString();
-                    int Dep = Convert.ToInt32(DepCb.SelectedValue.ToString());
-                    string DOB = DOBTb.Value.ToString();
-                    string JDate = JDateTb.Value.ToString();
+                   string Name = EmpNameTb.Text;
+                   string Gender = GenCb.SelectedItem.ToString();
+                   int Dep = Convert.ToInt32(DepCb.SelectedValue.ToString());
+                   string DOB = DOBTb.Value.ToString();
+                   string JDate = JDateTb.Value.ToString();
                     int Salary = Convert.ToInt32(DailySalTb.Text);
                     string Query = "insert into EmpoyeeTb1 values('{0}','{1}',{2},'{3}','{4}',{5})";
                     Query = string.Format(Query, Name, Gender, Dep, DOB, JDate, Salary);
