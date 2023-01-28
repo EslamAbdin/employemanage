@@ -84,6 +84,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.ForeColor = System.Drawing.Color.Coral;
+            this.label9.ImageAlign = System.Drawing.ContentAlignment.TopRight;
             this.label9.Location = new System.Drawing.Point(3, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(284, 20);
@@ -217,7 +218,7 @@
             // 
             // UpdateBtn
             // 
-            this.UpdateBtn.BackColor = System.Drawing.Color.SteelBlue;
+            this.UpdateBtn.BackColor = System.Drawing.Color.LightSkyBlue;
             this.UpdateBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.UpdateBtn.Location = new System.Drawing.Point(124, 550);
             this.UpdateBtn.Name = "UpdateBtn";
