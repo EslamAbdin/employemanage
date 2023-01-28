@@ -15,10 +15,10 @@ namespace employemanage
         Functions Con;
         public Employees()
         {
-            InitializeComponent();
-            Con = new Functions();
-            ShowEmp();
-            GetDepartments();
+           InitializeComponent();
+           Con = new Functions();
+           ShowEmp();
+           GetDepartments();
         }
         private void ShowEmp()
         {
