@@ -48,18 +48,20 @@
             this.DepList = new Guna.UI2.WinForms.Guna2DataGridView();
             this.DeleteBtn = new System.Windows.Forms.Button();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EmpLbi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DepList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // EditBtn
             // 
             this.EditBtn.BackColor = System.Drawing.Color.LightSkyBlue;
             this.EditBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.EditBtn.Location = new System.Drawing.Point(123, 234);
+            this.EditBtn.Location = new System.Drawing.Point(123, 309);
             this.EditBtn.Name = "EditBtn";
             this.EditBtn.Size = new System.Drawing.Size(105, 44);
             this.EditBtn.TabIndex = 36;
@@ -71,7 +73,7 @@
             // 
             this.AddBtn.BackColor = System.Drawing.Color.SteelBlue;
             this.AddBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.AddBtn.Location = new System.Drawing.Point(12, 234);
+            this.AddBtn.Location = new System.Drawing.Point(12, 309);
             this.AddBtn.Name = "AddBtn";
             this.AddBtn.Size = new System.Drawing.Size(105, 44);
             this.AddBtn.TabIndex = 32;
@@ -85,7 +87,7 @@
             this.label5.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label5.Location = new System.Drawing.Point(12, 137);
+            this.label5.Location = new System.Drawing.Point(12, 191);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(153, 20);
             this.label5.TabIndex = 27;
@@ -94,7 +96,7 @@
             // DepNameTb
             // 
             this.DepNameTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DepNameTb.Location = new System.Drawing.Point(11, 160);
+            this.DepNameTb.Location = new System.Drawing.Point(12, 228);
             this.DepNameTb.Multiline = true;
             this.DepNameTb.Name = "DepNameTb";
             this.DepNameTb.Size = new System.Drawing.Size(217, 43);
@@ -104,7 +106,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Coral;
-            this.label2.Location = new System.Drawing.Point(12, 98);
+            this.label2.Location = new System.Drawing.Point(80, 134);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(153, 20);
             this.label2.TabIndex = 22;
@@ -221,7 +223,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.DepList.DefaultCellStyle = dataGridViewCellStyle3;
             this.DepList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DepList.Location = new System.Drawing.Point(355, 160);
+            this.DepList.Location = new System.Drawing.Point(326, 167);
             this.DepList.Name = "DepList";
             this.DepList.RowHeadersVisible = false;
             this.DepList.RowTemplate.Height = 25;
@@ -254,7 +256,7 @@
             // 
             this.DeleteBtn.BackColor = System.Drawing.Color.Crimson;
             this.DeleteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DeleteBtn.Location = new System.Drawing.Point(72, 300);
+            this.DeleteBtn.Location = new System.Drawing.Point(72, 375);
             this.DeleteBtn.Name = "DeleteBtn";
             this.DeleteBtn.Size = new System.Drawing.Size(105, 44);
             this.DeleteBtn.TabIndex = 47;
@@ -271,12 +273,23 @@
             this.flowLayoutPanel2.Size = new System.Drawing.Size(1029, 21);
             this.flowLayoutPanel2.TabIndex = 3;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 115);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(62, 54);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 48;
+            this.pictureBox1.TabStop = false;
+            // 
             // Departments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1029, 670);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.DeleteBtn);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.DepList);
@@ -304,6 +317,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EmpLbi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DepList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -328,5 +342,6 @@
         private Guna.UI2.WinForms.Guna2DataGridView DepList;
         private Label label9;
         private FlowLayoutPanel flowLayoutPanel2;
+        private PictureBox pictureBox1;
     }
 }
