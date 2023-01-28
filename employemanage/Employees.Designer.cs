@@ -309,7 +309,7 @@
             // 
             this.DOBTb.Checked = true;
             this.DOBTb.CustomizableEdges = customizableEdges1;
-            this.DOBTb.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DOBTb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.DOBTb.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.DOBTb.Location = new System.Drawing.Point(12, 382);
             this.DOBTb.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
