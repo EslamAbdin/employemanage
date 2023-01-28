@@ -316,7 +316,7 @@
             this.DOBTb.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.DOBTb.Name = "DOBTb";
             this.DOBTb.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            this.DOBTb.Size = new System.Drawing.Size(200, 36);
+            this.DOBTb.Size = new System.Drawing.Size(216, 36);
             this.DOBTb.TabIndex = 30;
             this.DOBTb.Value = new System.DateTime(2023, 1, 26, 17, 16, 5, 389);
             // 
