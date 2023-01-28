@@ -34,10 +34,10 @@ namespace employemanage
         }
         private void GetDepartments()
         {
-            string Query = "Select * from DepartmentTb1";
-            DepCb.DisplayMember = Con.GetData(Query).Columns["Depname"].ToString();
-            DepCb.ValueMember = Con.GetData(Query).Columns["Depid"].ToString();
-            DepCb.DataSource = Con.GetData(Query);
+           string Query = "Select * from DepartmentTb1";
+           DepCb.DisplayMember = Con.GetData(Query).Columns["Depname"].ToString();
+           DepCb.ValueMember = Con.GetData(Query).Columns["Depid"].ToString();
+           DepCb.DataSource = Con.GetData(Query);
         }
 
 
