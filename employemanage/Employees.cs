@@ -24,8 +24,8 @@ namespace employemanage
         {
             try
             {
-                string Query = "Select * from EmpoyeeTb1";
-                EmployeeList.DataSource = Con.GetData(Query);
+               string Query = "Select * from EmpoyeeTb1";
+               EmployeeList.DataSource = Con.GetData(Query);
             }
             catch
             {
