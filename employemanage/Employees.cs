@@ -227,9 +227,9 @@ namespace employemanage
 
          private void pictureBox3_Click(object sender, EventArgs e)
         {
-            Departments obj = new Departments();
-            obj.Show();
-            this.Hide();
+             Departments obj = new Departments();
+             obj.Show();
+             this.Hide();
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
