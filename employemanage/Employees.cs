@@ -139,7 +139,7 @@ namespace employemanage
             }
         }
 
-        private void DeleteBtn_Click(object sender, EventArgs e)
+         private void DeleteBtn_Click(object sender, EventArgs e)
         {
             try
             {
