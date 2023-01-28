@@ -117,11 +117,11 @@ namespace employemanage
 
          private void EditBtn_Click(object sender, EventArgs e)
         {
-            try
+             try
             {
-                if (DepNameTb.Text == "")
+                 if (DepNameTb.Text == "")
                 {
-                    MessageBox.Show("missing data!!!");
+                     MessageBox.Show("missing data!!!");
                 }
                 else
                 {
