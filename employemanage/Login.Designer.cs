@@ -121,10 +121,12 @@
             // 
             // button1
             // 
+            this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button1.BackColor = System.Drawing.Color.SteelBlue;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(256, 276);
+            this.button1.Location = new System.Drawing.Point(249, 276);
             this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(1);
             this.button1.Size = new System.Drawing.Size(105, 44);
             this.button1.TabIndex = 6;
             this.button1.Text = "Sign in";
@@ -135,11 +137,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.IndianRed;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label4.Location = new System.Drawing.Point(402, 292);
+            this.label4.Location = new System.Drawing.Point(385, 286);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(39, 15);
+            this.label4.Size = new System.Drawing.Size(56, 24);
             this.label4.TabIndex = 7;
             this.label4.Text = "reset";
             this.label4.Click += new System.EventHandler(this.label4_Click);
