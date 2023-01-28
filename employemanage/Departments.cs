@@ -142,9 +142,9 @@ namespace employemanage
 
          private void EmpLbi_Click(object sender, EventArgs e)
         {
-            Employees obj = new Employees();
-            obj.Show();
-            this.Hide();
+             Employees obj = new Employees();
+             obj.Show();
+             this.Hide();
         }
     }
 }
