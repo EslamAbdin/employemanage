@@ -141,11 +141,11 @@ namespace employemanage
 
          private void DeleteBtn_Click(object sender, EventArgs e)
         {
-            try
+             try
             {
                 if (key == 0)
                 {
-                    MessageBox.Show("missing data!!!");
+                     MessageBox.Show("missing data!!!");
                 }
                 else
                 {
