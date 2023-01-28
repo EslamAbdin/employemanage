@@ -38,7 +38,9 @@ namespace employemanage
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-
+            Login obj = new Login();
+            obj.Show();
+            this.Hide();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
