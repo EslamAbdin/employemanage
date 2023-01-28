@@ -62,6 +62,7 @@
             this.DeleteBtn = new System.Windows.Forms.Button();
             this.DepCb = new System.Windows.Forms.ComboBox();
             this.EmployeeList = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -407,12 +408,22 @@
             this.EmployeeList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.EmployeeList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.EmployeeList_CellContentClick);
             // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.BackColor = System.Drawing.Color.Blue;
+            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 649);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(1029, 21);
+            this.flowLayoutPanel2.TabIndex = 51;
+            // 
             // Employees
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1029, 670);
+            this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.EmployeeList);
             this.Controls.Add(this.DepCb);
             this.Controls.Add(this.DeleteBtn);
@@ -487,5 +498,6 @@
         private ComboBox DepCb;
         private Button button1;
         private Guna.UI2.WinForms.Guna2DataGridView Deplist;
+        private FlowLayoutPanel flowLayoutPanel2;
     }
 }
