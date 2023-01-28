@@ -47,6 +47,7 @@
             this.EmpLbi = new System.Windows.Forms.PictureBox();
             this.DepList = new Guna.UI2.WinForms.Guna2DataGridView();
             this.DeleteBtn = new System.Windows.Forms.Button();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -261,6 +262,15 @@
             this.DeleteBtn.UseVisualStyleBackColor = false;
             this.DeleteBtn.Click += new System.EventHandler(this.button1_Click);
             // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.BackColor = System.Drawing.Color.Blue;
+            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 649);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(1029, 21);
+            this.flowLayoutPanel2.TabIndex = 3;
+            // 
             // Departments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -268,6 +278,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1029, 670);
             this.Controls.Add(this.DeleteBtn);
+            this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.DepList);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
@@ -316,5 +327,6 @@
         private Button DeleteBtn;
         private Guna.UI2.WinForms.Guna2DataGridView DepList;
         private Label label9;
+        private FlowLayoutPanel flowLayoutPanel2;
     }
 }
