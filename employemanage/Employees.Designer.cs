@@ -325,7 +325,7 @@
             this.JDateTb.Checked = true;
             this.JDateTb.CustomizableEdges = customizableEdges3;
             this.JDateTb.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.JDateTb.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.JDateTb.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.JDateTb.Location = new System.Drawing.Point(12, 446);
             this.JDateTb.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.JDateTb.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
